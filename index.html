@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Hutany, Robotics &amp; Automation Engineer</title>
+  <meta name="theme-color" content="#06090c">
+  <meta name="description" content="Portfolio of Harry Hutany, BEng (Hons) Robotics and AI graduate in Singapore: embedded systems on STM32 and Raspberry Pi, industrial automation and robot simulation.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://harryh11.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harry Hutany, Robotics &amp; Automation Engineer">
+  <meta property="og:description" content="Embedded systems, automation and robot simulation, from pin map to working build.">
+  <meta property="og:image" content="https://harryh11.github.io/assets/work/stm32-vehicle.jpg">
+  <meta property="og:url" content="https://harryh11.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,SHRP@200..500,0..100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="harry.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container">
+      <div class="nav__bar">
+        <a class="wordmark" href="#main" aria-label="Harry Hutany, back to top">Harry Hutany</a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          Menu
+        </button>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#about" data-target="about">About</a></li>
+          <li><a href="#skills" data-target="skills">Skills</a></li>
+          <li><a href="#projects" data-target="projects">Projects</a></li>
+          <li><a href="#experience" data-target="experience">Experience</a></li>
+          <li><a href="#education" data-target="education">Education</a></li>
+          <li><a class="btn btn--line btn--sm" href="mailto:harryhutany11@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <div class="hero__name">
+            <div class="hero__id">
+              <h1 id="hero-title">Harry Hutany</h1>
+              <p class="lead">Robotics, Automation &amp; Embedded Systems Engineer<br>BEng (Hons) Robotics and AI · Singapore</p>
+            </div>
+          </div>
+          <p class="hero__focus">Microcontrollers, sensors and motion: from the pin map to a build that moves.</p>
+          <div class="actions">
+            <a class="btn" href="mailto:harryhutany11@gmail.com">Email me</a>
+            <a class="btn btn--line" href="https://github.com/HarryH11" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <figure class="frame" aria-describedby="frame-caption">
+          <div class="frame__view ticks">
+            <img class="hero-photo" src="assets/work/stm32-vehicle.jpg" width="960" height="1280" alt="STM32 robotic vehicle with a 3D-printed servo arm, ultrasonic and IR sensors" fetchpriority="high">
+          </div>
+          <figcaption class="frame__foot">
+            <p id="frame-caption">STM32 vehicle: 6 range sensors, 5 servos, 2 motors, no RTOS.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="statement">I like it when the wiring diagram and the robot agree.</h2>
+        <div class="about__cols">
+          <p>I’m a <strong>Robotics and Artificial Intelligence graduate</strong> of the <a class="link" href="https://www.herts.ac.uk/" target="_blank" rel="noopener">University of Hertfordshire</a>, studied at PSB Academy in Singapore. My strongest work is close to the hardware: STM32 and Raspberry Pi builds that read sensors, talk over UART, SPI and radio, and drive motors and servos.</p>
+          <p>Before university I interned at Kinergy and served two years of full-time National Service with the Singapore Police Force, in a division manpower branch, which taught me to work to procedure, keep records straight and deliver on deadlines. I’m now looking for automation and embedded systems engineering roles.</p>
+        </div>
+        <p class="about__links"><a class="link" href="https://github.com/HarryH11" target="_blank" rel="noopener">GitHub</a><a class="link" href="mailto:harryhutany11@gmail.com">Email</a></p>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="head">
+          <h2 id="skills-title">What I build with.</h2>
+          <p class="lead">Rated by how I’ve actually used each one.</p>
+          <ul class="legend" aria-label="How to read the colours">
+            <li><span class="chip chip--expert">Core</span> used across several builds</li>
+            <li><span class="chip chip--proficient">Hands-on</span> used in a project</li>
+            <li><span class="chip chip--familiar">Coursework</span> studied and practised</li>
+          </ul>
+        </div>
+        <div class="skills">
+          <article class="skill ticks skill--wide">
+            <header class="skill__head"><h3>Embedded and hardware</h3><span class="skill__n num">9</span></header>
+            <ul class="chips"><li><span class="chip chip--expert">STM32 Nucleo<span class="visually-hidden">, core</span></span></li><li><span class="chip chip--expert">Mbed / Keil Studio<span class="visually-hidden">, core</span></span></li><li><span class="chip chip--expert">Raspberry Pi<span class="visually-hidden">, core</span></span></li><li><span class="chip chip--expert">UART / SPI / ADC / PWM<span class="visually-hidden">, core</span></span></li><li><span class="chip chip--proficient">XBee (Zigbee) API frames<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--expert">Servos and DC motor drivers<span class="visually-hidden">, core</span></span></li><li><span class="chip chip--expert">Ultrasonic and IR sensors<span class="visually-hidden">, core</span></span></li><li><span class="chip chip--familiar">ARM assembly<span class="visually-hidden">, coursework</span></span></li><li><span class="chip chip--proficient">Breadboard prototyping<span class="visually-hidden">, hands-on</span></span></li></ul>
+          </article>
+          <article class="skill ticks">
+            <header class="skill__head"><h3>Languages</h3><span class="skill__n num">6</span></header>
+            <ul class="chips"><li><span class="chip chip--expert">Python<span class="visually-hidden">, core</span></span></li><li><span class="chip chip--expert">C / C++<span class="visually-hidden">, core</span></span></li><li><span class="chip chip--proficient">MATLAB<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--proficient">Lua<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--familiar">C#<span class="visually-hidden">, coursework</span></span></li><li><span class="chip chip--familiar">ARM assembly<span class="visually-hidden">, coursework</span></span></li></ul>
+          </article>
+          <article class="skill ticks">
+            <header class="skill__head"><h3>Robotics and simulation</h3><span class="skill__n num">7</span></header>
+            <ul class="chips"><li><span class="chip chip--expert">CoppeliaSim<span class="visually-hidden">, core</span></span></li><li><span class="chip chip--proficient">Webots<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--proficient">Dobot Magician<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--proficient">AlphaMini SDK<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--proficient">OMPL path planning<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--proficient">Behaviour-based control<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--proficient">Teleoperation UIs (Qt Designer)<span class="visually-hidden">, hands-on</span></span></li></ul>
+          </article>
+          <article class="skill ticks">
+            <header class="skill__head"><h3>AI and data</h3><span class="skill__n num">6</span></header>
+            <ul class="chips"><li><span class="chip chip--proficient">CNNs (TensorFlow / Keras)<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--proficient">scikit-learn<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--proficient">pandas / seaborn<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--proficient">Computer vision<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--proficient">MFCC audio features<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--familiar">Minimax search<span class="visually-hidden">, coursework</span></span></li></ul>
+          </article>
+          <article class="skill ticks">
+            <header class="skill__head"><h3>Control and analysis</h3><span class="skill__n num">4</span></header>
+            <ul class="chips"><li><span class="chip chip--proficient">MATLAB / Simulink<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--familiar">2nd-order system response<span class="visually-hidden">, coursework</span></span></li><li><span class="chip chip--familiar">Bode / stability margins<span class="visually-hidden">, coursework</span></span></li><li><span class="chip chip--familiar">Signal processing<span class="visually-hidden">, coursework</span></span></li></ul>
+          </article>
+          <article class="skill ticks">
+            <header class="skill__head"><h3>Design and fabrication</h3><span class="skill__n num">3</span></header>
+            <ul class="chips"><li><span class="chip chip--proficient">Autodesk Fusion 360<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--expert">3D printing (FDM)<span class="visually-hidden">, core</span></span></li><li><span class="chip chip--expert">Flowcharts and pin maps<span class="visually-hidden">, core</span></span></li></ul>
+          </article>
+          <article class="skill ticks">
+            <header class="skill__head"><h3>IT and infrastructure</h3><span class="skill__n num">4</span></header>
+            <ul class="chips"><li><span class="chip chip--proficient">Windows Server 2022 (AD, DHCP, DNS, WSUS)<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--proficient">VMware Workstation<span class="visually-hidden">, hands-on</span></span></li><li><span class="chip chip--familiar">Network topology design<span class="visually-hidden">, coursework</span></span></li><li><span class="chip chip--familiar">Cloud service models<span class="visually-hidden">, coursework</span></span></li></ul>
+          </article>
+          <article class="skill ticks">
+            <header class="skill__head"><h3>Spoken languages</h3><span class="skill__n num">1</span></header>
+            <ul class="chips"><li><span class="chip chip--expert">English<span class="visually-hidden">, core</span></span></li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="head">
+          <h2 id="projects-title">Twelve builds, most of them with servos.</h2>
+          <p class="lead">Hardware, simulation and data projects from my degree, each with a write-up.</p>
+        </div>
+        <nav class="cats" aria-label="Project categories">
+          <a href="#cat-embedded">Embedded systems<span class="num">3</span></a>
+          <a href="#cat-automation">Automation and manipulation<span class="num">3</span></a>
+          <a href="#cat-sim">Robot simulation and behaviour<span class="num">3</span></a>
+          <a href="#cat-ai">AI and data<span class="num">3</span></a>
+        </nav>
+        <div class="cat" id="cat-embedded">
+          <div class="cat__head"><h3>Embedded systems</h3><p>Microcontrollers, sensors and radios, close to the metal.</p></div>
+          <div class="cards cards--3">
+          <article class="card">
+            <figure class="card__pic"><img src="assets/work/stm32-vehicle.jpg" alt="The STM32 vehicle with its servo arm on a lab bench" loading="eager" decoding="async"></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=stm32-vehicle">STM32 obstacle-avoiding vehicle with 3-DOF arm</a></h4>
+              <p>Ultrasonic and IR sensing, truth-table steering and a five-servo arm on a Nucleo, no RTOS.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>STM32</li><li>C/C++</li><li>Mbed</li></ul></div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card__pic"><img src="assets/work/xbee-bench.jpg" alt="Two Nucleo boards wired to XBee modules on a bench" loading="eager" decoding="async"></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=xbee-servo">XBee wireless servo control</a></h4>
+              <p>Hand-built XBee API frames with checksums carry a potentiometer reading from one STM32 to a servo on another.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>XBee</li><li>UART</li><li>PWM</li></ul></div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card__pic"><img src="assets/work/pi-arm-iso.jpg" alt="Raspberry Pi, servo and sensors mounted on a red base" loading="eager" decoding="async"></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=pi-arm">Raspberry Pi arm with homing</a></h4>
+              <p>Limit-switch homing, potentiometer control through an MCP3008 over SPI, LED and ultrasonic feedback.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>Raspberry Pi</li><li>SPI</li><li>Python</li></ul></div>
+            </div>
+          </article>
+          </div>
+        </div>
+        <div class="cat" id="cat-automation">
+          <div class="cat__head"><h3>Automation and manipulation</h3><p>Machines that sort, pick and deliver.</p></div>
+          <div class="cards cards--3">
+          <article class="card">
+            <figure class="card__pic"><img src="assets/work/bin-print.jpg" alt="3D-printed ring of the waste sorting bin" loading="lazy" decoding="async"></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=waste-sorting">AI waste sorting bin</a></h4>
+              <p>Final-year project: a CNN classifies the item, servos turn and tilt the lid into the right compartment.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>Raspberry Pi</li><li>CNN</li><li>Fusion 360</li></ul></div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card__pic"><img src="assets/work/dobot.jpg" alt="Simulated Dobot arm beside a conveyor of coloured blocks" loading="lazy" decoding="async"></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=dobot-cell">Dobot colour-sorting conveyor cell</a></h4>
+              <p>Vision sensor stops the belt, the Dobot picks red and green blocks by suction and places them by colour.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>CoppeliaSim</li><li>Lua</li><li>Dobot</li></ul></div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card__pic"><img src="assets/work/alphamini-flow.jpg" alt="Flowchart of the waiter robot&#x27;s delivery routine" loading="lazy" decoding="async"></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=alphamini-waiter">AlphaMini waiter robot</a></h4>
+              <p>Team of three: object recognition picks the route, the humanoid carries and drops the item. I designed the routine.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>Python</li><li>AlphaMini</li><li>Team</li></ul></div>
+            </div>
+          </article>
+          </div>
+        </div>
+        <div class="cat" id="cat-sim">
+          <div class="cat__head"><h3>Robot simulation and behaviour</h3><p>Autonomy worked out in simulation first.</p></div>
+          <div class="cards cards--3">
+          <article class="card">
+            <figure class="card__pic"><img src="assets/work/bubblerob.jpg" alt="BubbleRob in CoppeliaSim with its proximity sensor cone" loading="lazy" decoding="async"></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=patrol-robot">Home-security patrol robot</a></h4>
+              <p>Patrol routes with OMPL, obstacle avoidance, live video and intruder alerts in a Qt UI.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>CoppeliaSim</li><li>Qt</li><li>OMPL</li></ul></div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card__pic"><img src="assets/work/cnn-accuracy.jpg" alt="Training versus validation accuracy curves" loading="lazy" decoding="async"></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=epuck-cnn">Webots search robot with CNN</a></h4>
+              <p>e-puck searches an arena; a CIFAR-10 CNN tries to recognise what its camera sees.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>Webots</li><li>Keras</li><li>CNN</li></ul></div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card__pic"><img src="assets/work/subsumption.jpg" alt="Subsumption diagram of the robot&#x27;s behaviours" loading="lazy" decoding="async"></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=subsumption">Subsumption behaviours in Webots</a></h4>
+              <p>Obstacle avoidance overrides hunger, thirst and sleep drives, which override wandering.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>Webots</li><li>Behaviour-based</li></ul></div>
+            </div>
+          </article>
+          </div>
+        </div>
+        <div class="cat" id="cat-ai">
+          <div class="cat__head"><h3>AI and data</h3><p>Machine learning off the robot.</p></div>
+          <div class="cards cards--3">
+          <article class="card">
+            <figure class="card__pic"><img src="assets/work/heart-boxcox.jpg" alt="Box-Cox transformation plots of patient age" loading="lazy" decoding="async"></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=heart-failure-ml">Heart-failure mortality prediction</a></h4>
+              <p>SVM, decision tree and KNN on 299 patient records; best test accuracy 88%.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>scikit-learn</li><li>pandas</li></ul></div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card__pic card__pic--type" aria-hidden="true"><span>MFCC</span></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=speaker-id">Speaker identification</a></h4>
+              <p>MFCC, pitch and energy features with KNN: 97.87% cross-validated, every test file identified.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>MATLAB</li><li>MFCC</li><li>KNN</li></ul></div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card__pic card__pic--type" aria-hidden="true"><span>MINIMAX</span></figure>
+            <div class="card__body">
+              <h4><a class="card__link proj" href="project.html?id=tictactoe-ai">Tic-tac-toe AI</a></h4>
+              <p>Three difficulty levels, up to full minimax that never loses.</p>
+              <div class="card__foot"><ul class="card__tags" aria-label="Built with"><li>Python</li><li>Minimax</li></ul></div>
+            </div>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="head">
+          <h2 id="exp-title">Discipline first, then robots.</h2>
+        </div>
+          <article class="entry">
+            <div>
+              <h3>National Service Ops Support Officer, Staff Assistant to Manpower Officer</h3>
+              <p class="org">Singapore Police Force, Tanglin Division, Manpower Branch</p>
+              <p class="when">Nov 2021 to Nov 2023 (full-time National Service)</p>
+            </div>
+            <ul>
+              <li>Posted to the division’s Manpower Branch as Staff Assistant to the Manpower Officer, supporting HR administration for full-time national servicemen in the division.</li>
+              <li>Worked within police standard operating procedures, with accurate record-keeping and fixed deadlines.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div>
+              <h3>Intern</h3>
+              <p class="org">Kinergy, Singapore</p>
+              <p class="when">Mar 2021 to May 2021</p>
+            </div>
+          </article>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <div class="head">
+          <h2 id="edu-title">Robotics and AI, hands on.</h2>
+        </div>
+          <article class="entry">
+            <div><h3>BEng (Hons) Robotics and Artificial Intelligence</h3></div>
+            <div>
+              <p><a class="link" href="https://www.herts.ac.uk/" target="_blank" rel="noopener">University of Hertfordshire</a>, delivered at <a class="link" href="https://www.psb-academy.edu.sg/" target="_blank" rel="noopener">PSB Academy</a>, Singapore</p>
+              <p class="when">May 2024 to Nov 2026 · Second Class Honours · Final-year project: AI waste sorting bin</p>
+              <p class="when">Modules include Embedded Systems Design, Robot Communications, Robot Sensors and Signal Processing, Industrial Robotics, Mechatronics, Machine Learning, Behavioural Robotics, Mobile Robot Navigation and Design.</p>
+            </div>
+          </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__line">Open to automation and embedded systems roles in Singapore.</p>
+      <ul class="channels">
+        <li><a href="mailto:harryhutany11@gmail.com"><span class="k">Email</span><span class="v">harryhutany11@gmail.com</span></a></li>
+        <li><a href="https://github.com/HarryH11" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">HarryH11</span></a></li>
+      </ul>
+      <div class="footer__meta">
+        <p>© <span id="y">2026</span> Harry Hutany</p>
+        <ul class="footer__links">
+          <li><a href="https://github.com/HarryH11" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:harryhutany11@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>

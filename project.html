@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project, Harry Hutany</title>
+  <meta name="theme-color" content="#06090c">
+  <meta name="description" content="A robotics, automation or embedded systems project by Harry Hutany: what was built and how it works.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="A project by Harry Hutany">
+  <meta property="og:image" content="https://harryh11.github.io/assets/work/stm32-vehicle.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,SHRP@200..500,0..100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="harry.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container">
+      <div class="nav__bar">
+        <a class="wordmark" href="index.html" aria-label="Harry Hutany, home">Harry Hutany</a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          Menu
+        </button>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html#projects">All projects</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a class="btn btn--line btn--sm" href="mailto:harryhutany11@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="project-detail">
+    <section class="p-head">
+      <div class="container">
+        <h1 id="p-title">Project</h1>
+        <div class="p-meta">
+          <span id="p-status" class="p-status" hidden></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <img id="p-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="1600" height="900" alt="" class="p-hero" fetchpriority="high" decoding="async" hidden>
+      <div class="p-body">
+        <div class="p-main">
+          <p id="p-desc" class="p-desc"></p>
+          <h2 class="visually-hidden">Write-up</h2>
+          <div id="p-sections"></div>
+          <div id="p-media" class="media" hidden></div>
+        </div>
+        <aside class="p-aside">
+          <div class="p-facts">
+            <p class="p-facts__title">Built with</p>
+            <div id="p-tags" class="tagrow"></div>
+            <a class="btn btn--line" href="index.html#projects">Back to all projects</a>
+            <a class="link p-next" id="p-next" href="index.html#projects" hidden>Next project</a>
+            <p>Questions about this build? <a class="link" href="mailto:harryhutany11@gmail.com">Email me</a>.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__line">From the pin map to a build that moves.</p>
+      <div class="footer__meta">
+        <p>© <span id="y">2026</span> Harry Hutany</p>
+        <ul class="footer__links">
+          <li><a href="https://github.com/HarryH11" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:harryhutany11@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script>
+    (function () {
+      ['p-status', 'p-img', 'p-media'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el && el.style.display && el.style.display !== 'none') { el.hidden = false; el.style.removeProperty('display'); }
+      });
+      document.querySelectorAll('#p-sections img, #p-media img').forEach(function (im) { if (!im.loading) im.loading = 'lazy'; im.decoding = 'async'; });
+      var order = ['waste-sorting','stm32-vehicle','xbee-servo','pi-arm','dobot-cell','alphamini-waiter','patrol-robot','epuck-cnn','subsumption','heart-failure-ml','speaker-id','tictactoe-ai'];
+      var cur = new URLSearchParams(location.search).get('id') || 'waste-sorting', i = order.indexOf(cur), nx = document.getElementById('p-next');
+      if (i > -1 && nx && window.PROJECTS) { var nid = order[(i + 1) % order.length], np = window.PROJECTS[nid]; if (np) { nx.href = 'project.html?id=' + nid; nx.textContent = 'Next: ' + np.title; nx.hidden = false; } }
+      var t = document.getElementById('p-title');
+      if (t && t.textContent !== 'Project') { var og = document.querySelector('meta[property="og:title"]'); if (og) og.content = t.textContent + ', Harry Hutany'; document.title = t.textContent + ', Harry Hutany'; }
+      if (t && t.textContent === 'Project not found') { var a = document.createElement('a'); a.className = 'btn btn--line'; a.href = 'index.html#projects'; a.textContent = 'See all projects'; t.insertAdjacentElement('afterend', a); document.querySelector('.p-body').hidden = true; }
+      var toggle = document.querySelector('.nav__toggle'), links = document.getElementById('nav-links');
+      if (toggle && links) toggle.addEventListener('click', function () { var o = !links.classList.contains('is-open'); links.classList.toggle('is-open', o); toggle.setAttribute('aria-expanded', String(o)); });
+    })();
+  </script>
+</body>
+</html>

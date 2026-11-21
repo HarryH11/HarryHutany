@@ -1,0 +1,7 @@
+/* Harry Hutany: additions to the base template */
+.hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; border-radius: var(--radius-card); filter: saturate(0.85) contrast(1.05); }
+.card__pic--type { display: grid; place-items: center; background: var(--color-paper-3); }
+.card__pic--type span { font-size: clamp(1.5rem, 2.4vw, 2.25rem); font-weight: 300; letter-spacing: 0.12em; color: var(--color-tint); }
+.p-section .table { width: 100%; margin-top: var(--space-md); }
+.p-section ol { padding-left: 1.25em; }
+.p-hero { max-height: 72vh; object-fit: cover; }
