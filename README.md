@@ -1,8 +1,8 @@
-# HarryH11.github.io
+# HarryHutany
 
 Personal portfolio of **Harry Hutany**: robotics, automation and embedded systems (BEng (Hons) Robotics and AI, University of Hertfordshire).
 
-Live site: https://harryh11.github.io/
+Live site: https://harryh11.github.io/HarryHutany/
 
 ## Run locally
 ```bash

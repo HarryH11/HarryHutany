@@ -1,4 +1,4 @@
-# CLAUDE.md: HarryH11.github.io
+# CLAUDE.md: HarryHutany portfolio repo
 
 Instructions for Claude (Claude Code or any Claude session) working in this repository.
 
