@@ -180,7 +180,7 @@ window.PROJECTS["heart-failure-ml"] = {
 window.PROJECTS["speaker-id"] = {
   title: "Speaker Identification with MFCC and KNN",
   status: "Completed, Jun 2025",
-  cover: "",
+  cover: "assets/work/speaker-id.jpg",
   tags: ["MATLAB", "Audio Toolbox", "MFCC", "KNN", "Signal processing"],
   desc: "Identifies which of five TIMIT speakers is talking. Voiced frames are selected by short-time energy and zero-crossing rate, then MFCC, pitch, ZCR and energy features feed a KNN classifier.",
   sections: [
@@ -194,7 +194,7 @@ window.PROJECTS["speaker-id"] = {
 window.PROJECTS["tictactoe-ai"] = {
   title: "Tic-Tac-Toe AI with Minimax",
   status: "Completed, Dec 2024",
-  cover: "",
+  cover: "assets/work/tictactoe.jpg",
   tags: ["Python", "Minimax", "Game AI"],
   desc: "A two-player game with three AI levels: Easy plays randomly, Medium mixes random and minimax moves 50/50, Hard plays full minimax and cannot lose.",
   sections: [ { heading: "Next", content: `<p>Alpha-beta pruning to skip branches that can't change the result, and a graphical interface.</p>` } ]
