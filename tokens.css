@@ -12,9 +12,9 @@
   --color-paper: oklch(13.5% 0.012 235); --color-paper-2: oklch(17% 0.014 235); --color-paper-3: oklch(21% 0.016 235);
   --color-ink: oklch(95% 0.006 230); --color-ink-2: oklch(82% 0.012 230); --color-muted: oklch(66% 0.016 230);
   --color-rule: oklch(27% 0.014 235); --color-rule-2: oklch(34% 0.016 235);
-  --color-accent: oklch(89% 0.19 126); --color-accent-hi: oklch(93% 0.17 126); --color-accent-ink: oklch(19% 0.04 126); --color-focus: oklch(89% 0.19 126);
-  --color-tint: oklch(84% 0.17 126); --color-tint-hi: oklch(89% 0.15 126); --color-tint-wash: oklch(84% 0.17 126 / 0.07); --color-tint-rule: oklch(84% 0.17 126 / 0.4);
-  --point-lo: oklch(42% 0.04 245); --point-mid: oklch(70% 0.04 232); --point-hi: oklch(96% 0.02 215);
+  --color-accent: oklch(76% 0.15 300); --color-accent-hi: oklch(82% 0.13 300); --color-accent-ink: oklch(18% 0.06 300); --color-focus: oklch(76% 0.15 300);
+  --color-tint: oklch(78% 0.14 300); --color-tint-hi: oklch(85% 0.11 300); --color-tint-wash: oklch(78% 0.14 300 / 0.08); --color-tint-rule: oklch(78% 0.14 300 / 0.45);
+  --point-lo: oklch(42% 0.04 290); --point-mid: oklch(70% 0.04 290); --point-hi: oklch(96% 0.02 290);
   --color-slot: oklch(21% 0.016 235);
   --font-display: "Geologica", ui-sans-serif, system-ui, sans-serif; --font-body: "Geologica", ui-sans-serif, system-ui, sans-serif;
   --radius-card: 4px; --radius-pill: 999px; --rule-hair: 1px; --tick: 10px;
